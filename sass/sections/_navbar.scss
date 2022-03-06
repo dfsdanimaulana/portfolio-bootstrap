@@ -11,7 +11,7 @@
             text-transform: uppercase;
             font-weight: 600;
 
-            @include media-breakpoint-down(sm) {
+            @include media-breakpoint-down(lg) {
                 margin: 1rem 0;
             }
         }

@@ -2,7 +2,7 @@
 @use '../components/mixins' as *;
 
 .btn-rounded {
-    @include media-breakpoint-down(sm) {
+    @include media-breakpoint-down(lg) {
         display: none;
     }
     position: relative;
