@@ -8,7 +8,7 @@
         &:link,
         &:visited {
             padding: 0 0.7rem;
-            text-transform: uppercase;
+            text-transform: capitalize;
             font-weight: 600;
 
             @include media-breakpoint-down(lg) {

@@ -11137,6 +11137,7 @@ textarea.form-control-lg {
 }
 .btn-rounded {
   position: relative;
+  text-transform: capitalize;
   padding: 0.9375rem 4.375rem 0.9375rem 1.25rem;
   font-weight: 700;
   margin: 0;
@@ -11232,6 +11233,10 @@ textarea.form-control-lg {
   height: 100%;
 }
 
+.gradient {
+  background: linear-gradient(to right, rgba(153, 38, 240, 0.95), rgba(209, 34, 227, 0.95));
+}
+
 .companies {
   padding-bottom: 5rem;
 }
@@ -11248,6 +11253,98 @@ textarea.form-control-lg {
 }
 .companies__logo-box img:hover {
   filter: grayscale(120);
+}
+
+.footer {
+  padding-top: 1rem;
+  background-color: #151414;
+}
+
+.contact-box {
+  position: relative;
+}
+.contact-box__icon {
+  width: 2rem;
+  stroke: #9926f0;
+}
+@media (min-width: 576px) {
+  .contact-box__icon {
+    width: 4rem;
+  }
+}
+.contact-box__info {
+  padding: 0.4rem;
+  font-weight: 600;
+}
+.contact-box__info--title {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.4rem;
+  text-transform: capitalize;
+}
+.contact-box__info--subtitle {
+  color: #6c757d;
+  text-decoration: none;
+  font-size: 0.8rem;
+}
+@media (min-width: 576px) {
+  .contact-box__info--subtitle {
+    font-size: 1rem;
+  }
+}
+
+.footer-sm {
+  width: 100%;
+}
+.footer-sm a {
+  color: #fff;
+}
+.footer-sm a i {
+  font-size: 1rem;
+  margin-left: 1rem;
+}
+@media (min-width: 576px) {
+  .footer-sm a i {
+    font-size: 1.7rem;
+  }
+}
+
+.get-started {
+  padding: 4rem 0;
+  background-color: #e9ecef;
+}
+
+.cta-info {
+  padding: 3rem;
+  margin: 1rem 0;
+}
+.cta-info__list {
+  position: relative;
+  list-style-type: none;
+  display: block;
+  padding-top: 0.5rem;
+  padding-left: 0.5rem;
+  margin-bottom: 0.7rem;
+}
+.cta-info__list li::before {
+  font-family: "Fonts Awesome 5 Free";
+  content: "\f00c";
+  font-weight: 600;
+  margin-right: 0.5rem;
+  font-size: 1.2rem;
+}
+
+.form {
+  padding: 3rem;
+}
+.form button {
+  border: none;
+  color: #fff;
+}
+.form button a {
+  color: #fff;
+  text-decoration: none;
+  text-transform: capitalize;
 }
 
 .intro-section {
@@ -11287,7 +11384,7 @@ textarea.form-control-lg {
 }
 .menu .nav-link:link, .menu .nav-link:visited {
   padding: 0 0.7rem;
-  text-transform: uppercase;
+  text-transform: capitalize;
   font-weight: 600;
 }
 @media (max-width: 991.98px) {
@@ -11302,28 +11399,29 @@ textarea.form-control-lg {
 .portfolio button {
   text-transform: capitalize;
 }
-.portfolio .portfolio-box {
+.portfolio-box {
   position: relative;
   width: 100%;
-  height: 100%;
+  height: 18.5rem;
   overflow: hidden;
   margin-bottom: 1.3rem;
-  border-top: 0.5rem said #bb6ef5;
+  border-top: 0.5rem solid #bb6ef5;
 }
-.portfolio .portfolio-box img {
+.portfolio-box img {
   width: 100%;
   height: 100%;
 }
-.portfolio .portfolio-box .portfolio-info {
+.portfolio-box .portfolio-info {
   background-color: rgba(153, 38, 240, 0.75);
   width: 100%;
   height: 100%;
   position: absolute;
   top: 0;
+  left: 0;
   opacity: 0;
   visibility: hidden;
 }
-.portfolio .portfolio-box .portfolio-info .caption {
+.portfolio-box .portfolio-info .caption {
   text-align: center;
   color: #fff;
   position: absolute;
@@ -11331,12 +11429,18 @@ textarea.form-control-lg {
   left: 50%;
   transform: translate(-50%, -50%);
 }
-.portfolio .portfolio-box .portfolio-info .caption h4 {
+.portfolio-box .portfolio-info .caption h4 {
   text-transform: uppercase;
+  display: block;
 }
-.portfolio .portfolio-box:hover .portfolio-info {
+.portfolio-box:hover img {
+  transform: scale(1.5);
+  transition: all 1s;
+}
+.portfolio-box:hover .portfolio-info {
   opacity: 1;
   visibility: visible;
+  transition: all 1s;
 }
 
 .services {
